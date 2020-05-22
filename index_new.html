@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Business Department</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .slide-wrapper {
+            position: relative
+        }
+
+        .red {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .red-content {
+            width: 100%;
+            height: 300px;
+            background: red;
+            color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .carousel-caption {
+                text-align: left;
+                padding-right: 300px;
+            }
+
+            .red {
+                width: 750px;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                bottom: 0;
+                padding: 20px 0;
+                margin-left: -375px;
+            }
+
+            .red-content {
+                width: 300px;
+                float: right;
+                height: 100%;
+                background: red;
+                color: #fff;
+                margin-right: 15px;
+                /* width of .container gutter */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .red {
+                width: 970px;
+                margin-left: -485px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .red {
+                width: 1170px;
+                margin-left: -585px;
+            }
+        }
+
+        /* MISC */
+        #homepage-feature .item {
+            overflow: hidden;
+            height: 400px;
+            background-color: transparent;
+            background-size: cover;
+        }
+
+        #homepage-feature>.carousel-control {
+            width: 30px;
+            font-size: 40px;
+            color: #fff;
+            text-shadow: none;
+            filter: none;
+            opacity: 1;
+        }
+
+        #homepage-feature>.carousel-control span {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            width: 100%;
+            text-align: center;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-wrapper">
+
+        <div id="homepage-feature" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#homepage-feature" data-slide-to="0" class="active"></li>
+                <li data-target="#homepage-feature" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active" style="background-image:url(http://lorempixel.com/1500/600/abstract)">
+                    <div class="carousel-caption">
+                        <h1>Changes to the Grid</h1>
+                        <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely
+                            changed.</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item" style="background-image:url(http://placehold.it/1500x600)">
+                    <div class="carousel-caption">
+                        <h1>Percentage-based sizing</h1>
+                        <p>With "mobile-first" there is now only one percentage-based grid.</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.carousel-inner -->
+            <!-- Controls -->
+            <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
+                <span class="fa fa-angle-left"></span>
+            </a>
+            <a class="right carousel-control" href="#homepage-feature" data-slide="next">
+                <span class="fa fa-angle-right"></span>
+            </a>
+        </div>
+        <!-- /#homepage-feature.carousel -->
+        <div class="red">
+
+            <div class="red-content">
+                Content goes here.
+
+            </div>
+
+
+        </div>s
+
+    </div>
+    <!-- /.container.slide-wrapper -->
+
+</body>
+
+</html>
